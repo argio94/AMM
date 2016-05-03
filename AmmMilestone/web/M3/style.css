@@ -1,0 +1,351 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30-mar-2016, 15.06.45
+    Author     : Alessandro Argiolas 49062
+*/
+
+body
+{
+    background-color: white;
+    font-size: 14px;
+    color: black;
+}
+
+*
+{
+    font-family: "Open Sans", Arial, sans-serif; 
+}
+
+/******************************************************************************/
+/********************************** TESTO *************************************/
+/******************************************************************************/
+
+h1
+{
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+h2
+{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+h3
+{
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+a:link, a:visited
+{    
+    background-color: #423E3E;
+    border-style: solid;
+    border-color: #423E3E;
+    border-radius: 5px;
+    color: white;
+}
+
+a:hover
+{
+    font-weight: bold;
+    color: white;
+}
+
+/******************************************************************************/
+/******************************** TABELLA *************************************/
+/******************************************************************************/
+
+table
+{
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+#table
+{
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+th
+{
+    background-color: #423E3E;
+    border-style: solid;
+    border-color: #423E3E;
+    color: white;
+    height: 40px;
+    width: 20%;
+    font-size: 18px;
+}
+
+td
+{
+    padding: 5px;
+    width: 20%;
+}
+
+.even
+{
+    background-color: #D0D0D0;
+}
+
+td img
+{
+    border-style: solid;
+    border-color: #423E3E;
+    border-radius: 10px;
+}
+
+/******************************************************************************/
+/*********************** VISUALIZZAZIONE DELLA FORM ***************************/
+/******************************************************************************/
+
+form
+{
+    width: 60%;
+    padding: 10px;
+    border-style: solid;
+    border-color: #423E3E;
+    border-radius: 10px;
+}
+
+label
+{
+    float: left;
+    display: block;
+    width: 20%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    background-color: #423E3E;
+    color: white;
+    border: solid;
+    border-color: #423E3E;
+    border-radius: 5px;
+    line-height: 20px;
+    text-align: center;
+}
+
+input, textarea
+{
+    width: 78%;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: solid;
+    border-color: #423E3E;
+    border-radius: 5px;
+    line-height: 20px;
+}
+
+
+#button input
+{
+    position: relative;
+    cursor: pointer;
+    width: 20%;
+    display: inline-block;
+    left: 30%;
+    margin-top: 5%;
+}
+
+/******************************************************************************/
+/**************************** LAYOUT RESPONSIVE *******************************/
+/******************************************************************************/
+
+*
+{
+    box-sizing: border-box;
+}
+
+/******************************** 1024 PX *************************************/
+
+@media only screen and (min-width: 1280px)
+{
+    #header
+    {
+        position: absolute;
+        float: right;
+        width: 100%;
+        height: 70px;
+        top: 0;
+        left: 0;
+        background-color: #423E3E;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    #sidebar
+    {
+        position: absolute;
+        width: 20%;
+        height: 550px;
+        top: 80px;
+        left: 10px;
+        padding: 10px;
+        background-color: #FF2626;
+        border-radius: 10px;
+    }
+
+    #content
+    {
+        position: absolute;
+        width: 78%;
+        height: 550px;
+        top: 80px;
+        right: 0;
+        padding: 5px;
+    }
+    
+    #footer
+    {
+        position: absolute;
+        width: 100%;
+        height: 70px;
+        top: 640px;
+        left: 0;
+        background-color: #423E3E;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+}
+
+/****************************** 480-1024 PX ***********************************/
+
+@media only screen and (min-width: 480px)
+                   and (max-width: 1280px)
+{
+   #header
+    {
+        position: absolute;
+        float: right;
+        width: 100%;
+        height: 70px;
+        top: 0;
+        left: 0;
+        background-color: #423E3E;
+    }
+
+    #sidebar
+    {
+        position: absolute;
+        width: 20%;
+        height: 550px;
+        top: 70px;
+        left: 0;
+        padding: 5px;
+        background-color: #FF2626;
+    }
+
+    #content
+    {
+        position: absolute;
+        width: 80%;
+        height: 550px;
+        top: 70px;
+        right: 0;
+        padding: 5px;
+    }
+    
+    #footer
+    {
+        position: absolute;
+        width: 100%;
+        height: 70px;
+        top: 620px;
+        left: 0;
+        background-color: #423E3E;
+    }
+    
+    form
+    {
+        width: 100%;
+    }
+    
+    label, input, textarea
+    {
+        width: 49%;
+        
+    }
+    
+    #button input
+    {
+        width: 30%;
+        display: inline-block;
+        left: 20%;
+        margin-top: 5%;
+    }
+}
+@media only screen and (max-width: 480px)
+{
+    #header
+    {
+        position: absolute;
+        float: right;
+        width: 100%;
+        height: 70px;
+        top: 0;
+        left: 0;
+        background-color: #423E3E;
+    }
+
+    #sidebar
+    {
+        position: absolute;
+        width: 100%;
+        height: 160px;
+        top: 70px;
+        left: 0;
+        background-color: #FF2626;
+    }
+
+    #content
+    {
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        top: 230px;
+        right: 0;
+        padding: 5px;
+    }
+    
+    #footer
+    {
+        position: absolute;
+        width: 100%;
+        height: 70px;
+        top: 730px;
+        left: 0;
+        background-color: #423E3E;
+    }
+    
+    form
+    {
+        width: 100%;
+    }
+    
+    label, input, textarea
+    {
+        width: 49%;
+        
+    }
+    
+    #button input
+    {
+        width: 30%;
+        display: inline-block;
+        left: 20%;
+        margin-top: 5%;
+    }
+    
+    
+ 
+}
+
